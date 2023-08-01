@@ -34,7 +34,7 @@ function getData($id){
         ],
     ];
     $context = stream_context_create($options);
-    $html = file_get_html("https://mandat.uzbmb.uz/Home2022/AfterFilter?name=".$id, false, $context);
+    $html = file_get_html("https://mandat.uzbmb.uz/Home2023/AfterFilter?name=".$id, false, $context);
 
     // Saytdan html kodlarni o'qiymiz
     $dom = str_get_html($html);
